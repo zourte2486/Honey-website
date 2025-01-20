@@ -60,6 +60,7 @@ header {
     background-color: var(--primary-color);
     color: rgb(2, 2, 2);
     padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header .container {
@@ -80,7 +81,7 @@ header ul {
 
 header nav ul li a {
     margin: 11px 20px;
-    padding: 10px 0;
+    padding: 10px 8px;
     font-weight: 500;
     display: flex;
     color: rgb(0, 0, 0);
@@ -94,12 +95,13 @@ header ul li a::after {
     content: '';
     display: block;
     width: 0;
-    height: 2px;
-    background: white;
+    height: 5px;
+    background: rgb(0, 0, 0);
     transition: width 0.3s;
     position: absolute;
     bottom: 0;
     left: 0;
+    border-radius: 10px;
 }
 
 header ul li a:hover::after {
@@ -108,7 +110,9 @@ header ul li a:hover::after {
 
 @media screen and (max-width: 768px) {
     header nav ul li a {
-        padding: 5px 10px;
+        margin: 5px 10px;
+        padding: 5px 4px;
+        font-weight: 500;
         display: flex;
         color: rgb(0, 0, 0);
         text-decoration: none;
@@ -122,6 +126,20 @@ header ul li a:hover::after {
 
 /* End Header */
 section {
-    padding: 200px 0;
-    background-image: url(/images/Frame.jpg);
+    padding: 100px 0;
+    background-color: var(--transparent-color);
+}
+
+section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section .container img {    
+    width: 50%;
+    object-fit: cover;
+}
+section .hero-content {
+    width: 50%;
 }
