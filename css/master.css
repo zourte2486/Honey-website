@@ -59,7 +59,7 @@ ul {}
 header {
     background-color: var(--primary-color);
     color: rgb(2, 2, 2);
-    padding: 0 20px;
+    padding: 10px 0;
 }
 
 header .container {
@@ -79,7 +79,7 @@ header ul {
 }
 
 header nav ul li a {
-    padding: 40px 10px;
+    padding: 11px 20px;
     display: flex;
     color: rgb(0, 0, 0);
     text-decoration: none;
@@ -88,9 +88,15 @@ header nav ul li a {
     position: relative;
 }
 
+header ul li a:hover {
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid white;
+}
+
 @media screen and (max-width: 768px) {
     header nav ul li a {
-        padding: 20px 5px;
+        padding: 5px 10px;
         display: flex;
         color: rgb(0, 0, 0);
         text-decoration: none;
@@ -100,10 +106,7 @@ header nav ul li a {
     }
 }
 
-header ul li a:hover {
-    transition: 0.5s;
-    color: white;
-}
+
 
 /* End Header */
 section {
